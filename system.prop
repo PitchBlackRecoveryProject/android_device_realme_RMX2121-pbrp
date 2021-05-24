@@ -1,6 +1,12 @@
+ro.secure=0
 ro.adb.secure=0
+ro.debuggable=1
+persist.sys.isUsbOtgEnabled=true
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
 ro.boot.avb_version=1.1
 ro.boot.vbmeta.avb_version=1.1
-ro.vendor.mediatek.platform=MT6765
+ro.vendor.mediatek.platform=MT6998
+ro.hardware=mt6889
 ro.boot.dynamic_partitions=true
 

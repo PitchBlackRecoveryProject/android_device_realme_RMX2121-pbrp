@@ -16,7 +16,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/realme/RMX2185
+DEVICE_PATH := device/realme/RMX2121
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -37,15 +37,15 @@ TARGET_BOARD_SUFFIX := _64
 TARGET_USES_64_BIT_BINDER := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := oppo6765
+TARGET_BOOTLOADER_BOARD_NAME := oppo6889
 TARGET_NO_BOOTLOADER := true
 TARGET_USES_UEFI := true
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6765
+TARGET_BOARD_PLATFORM := mt6889
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := RMX2185,rmx2185
+TARGET_OTA_ASSERT_DEVICE := RMX2121,RMX2121L1,rmx2121,RMX2121CN
 
 # Kernel
 BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user loop.max_part=70

@@ -16,6 +16,9 @@
 # limitations under the License.
 #
 
+# Release name
+PRODUCT_RELEASE_NAME := RMX2121
+
 # Dynamic
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -24,13 +27,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
-PRODUCT_DEVICE := RMX2185
-PRODUCT_NAME := omni_RMX2185
-PRODUCT_BRAND := realme
-PRODUCT_MODEL := RMX2185
-PRODUCT_MANUFACTURER := realme
+PRODUCT_DEVICE := RMX2121
+PRODUCT_NAME := omni_RMX2121
+PRODUCT_BRAND := Realme
+PRODUCT_MODEL := Realme X7 Pro
+PRODUCT_MANUFACTURER := Realme
 
 # HACK: Set vendor patch level and enable Treble
 PRODUCT_PROPERTY_OVERRIDES += \
