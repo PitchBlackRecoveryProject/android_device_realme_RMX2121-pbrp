@@ -1,3 +1,8 @@
+import /system/etc/init/init.ago.rc
+
+on early-init 
+     start adbd
+
 on fs
     install_keyring
     mkdir /mnt/vendor/persist 0777 system system
