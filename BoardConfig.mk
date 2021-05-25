@@ -142,4 +142,5 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/etc/recovery.fstab
 
 # PBRP specific build flags
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
-PB_TORCH_PATH := "/sys/class/flashlight"
+PB_TORCH_PATH := "/proc/qcom_flash"
+PB_TORCH_MAX_BRIGHTNESS := 1
