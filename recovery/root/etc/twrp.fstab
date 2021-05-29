@@ -23,7 +23,7 @@ oppo_engineering /oppo_engineering	        ext4		display="oppo_engineering";
 /nvdata          ext4    /dev/block/platform/bootdevice/by-name/nvdata             flags=backup=1;display="nvdata"
 /nvram           emmc    /dev/block/platform/bootdevice/by-name/nvram              flags=backup=1;display="nvram";flashimg=1
 /para            emmc    /dev/block/platform/bootdevice/by-name/para               flags=backup=1;display="para"
-/persist         ext4    /dev/block/platform/bootdevice/by-name/persist            flags=backup=1;display="Persit"
+/persist         ext4    /dev/block/platform/bootdevice/by-name/persist            flags=backup=1;display="Persist";mounttodecrypt
 /proinfo         emmc    /dev/block/platform/bootdevice/by-name/proinfo            flags=backup=1;display="proinfo"
 /protect_f       ext4    /dev/block/platform/bootdevice/by-name/protect1           flags=backup=1;display="protect_f"
 /protect_s       ext4    /dev/block/platform/bootdevice/by-name/protect2           flags=backup=1:display="protect_s"
