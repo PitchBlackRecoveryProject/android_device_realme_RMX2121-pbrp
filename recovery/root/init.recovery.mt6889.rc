@@ -2,7 +2,7 @@ import /tee.rc
 
 on fs
     install_keyring
-	setprop crypto.ready 1
+    setprop crypto.ready 1
     write /sys/class/power_supply/usb/otg_switch 1
     write /sys/class/oplus_chg/usb/otg_switch 1
 
@@ -74,7 +74,7 @@ on property:hwservicemanager.ready=true
 
 on property:ro.crypto.state=unsupported
     stop mobicore
-	stop hal_cryptoeng_oppo
+    stop hal_cryptoeng_oppo
     stop keymaster-4-0
     stop gatekeeper-1-0
     stop servicemanager
@@ -82,7 +82,7 @@ on property:ro.crypto.state=unsupported
 
 on property:ro.crypto.state=unencrypted
     stop mobicore
-	stop hal_cryptoeng_oppo
+    stop hal_cryptoeng_oppo
     stop keymaster-4-0
     stop gatekeeper-1-0
     stop servicemanager
@@ -90,7 +90,7 @@ on property:ro.crypto.state=unencrypted
 
 on property:twrp.decrypt.done=true
     stop mobicore
-	stop hal_cryptoeng_oppo
+    stop hal_cryptoeng_oppo
     stop keymaster-4-0
     stop gatekeeper-1-0
     stop servicemanager
