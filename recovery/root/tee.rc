@@ -5,7 +5,9 @@ on init
 on post-fs
     chown system system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
-
+    mkdir /data/vendor_de 0770 system system
+    mkdir /data/vendor_de/0 0770 system system
+    mkdir /data/vendor_de/0/cryptoeng 0770 system system
     # We restorecon /mnt/vendor/persist to set SEPolicy label.
     restorecon /mnt/vendor/persist
 
