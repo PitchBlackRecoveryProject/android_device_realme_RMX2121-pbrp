@@ -22,10 +22,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Inherit from our custom product configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/pb/config/common.mk)
 
 PRODUCT_DEVICE := RMX2121
-PRODUCT_NAME := twrp_RMX2121
+PRODUCT_NAME := omni_RMX2121
 PRODUCT_BRAND := Realme
 PRODUCT_MODEL := Realme X7 Pro
 PRODUCT_MANUFACTURER := Realme
