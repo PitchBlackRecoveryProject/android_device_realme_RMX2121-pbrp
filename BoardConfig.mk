@@ -144,6 +144,7 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
 TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 TW_EXCLUDE_DEFAULT_USB_INIT := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file
 TW_EXTRA_LANGUAGES := true
 TW_INCLUDE_NTFS_3G := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
@@ -156,6 +157,7 @@ TW_H_OFFSET := -50
 TARGET_USES_MKE2FS := true
 TW_EXCLUDE_TWRPAPP := true
 TW_OZIP_DECRYPT_KEY := 0000
+TW_INCLUDE_LOGICAL := odmdtbo
 
 # resetprop and magiskboot
 TW_INCLUDE_RESETPROP := true
