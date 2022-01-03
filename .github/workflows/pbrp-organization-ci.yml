@@ -23,8 +23,6 @@ env:
   SFUserName: ${{ secrets.SFUserName }}
   TARGET: "pbrp"
   #EXTRA_CMD: "Extra Commands Here"
-  USE_SECRET_BOOTABLE: true
-  SECRET_BR: android-11.0
 
 jobs:
   PBRP_CI:
@@ -34,7 +32,7 @@ jobs:
     steps:
        - name: Auto Adapt Manifest
          # /* if your branch name is other than the one which you dispatched workflow from then set it manually in the place of ${GITHUB_REF##*/}" */ 
-         run: echo "MANIFEST=https://github.com/PitchBlackRecoveryDevices/manifest_pb -b ${GITHUB_REF##*/}" >> $GITHUB_ENV
+         run: echo "MANIFEST=https://github.com/PitchBlackRecoveryProject/manifest_pb -b ${GITHUB_REF##*/}" >> $GITHUB_ENV
 
        - name: Export Vars
          run: |
