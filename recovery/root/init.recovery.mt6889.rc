@@ -29,7 +29,7 @@ service gatekeeper-1-0 /vendor/bin/hw/android.hardware.gatekeeper@1.0-service
 
 on property:hwservicemanager.ready=true
     start mobicore
-    start keymaster-4-0
+    start keymaster-4-1
     start gatekeeper-1-0
 
 on property:ro.crypto.state=unsupported
